@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>变量提升</title>
+</head>
+<body>
+    <script>
+        var bar = 1 ;
+        function test(bar) {
+            console.log(bar);
+            var bar = 2 ;
+            function bar() {
+                console.log(77);
+            }
+
+            console.log(bar);
+
+
+        }
+        test(6);
+    </script>
+</body>
+</html>
